@@ -5,7 +5,7 @@ namespace app\admin\controller;
 use think\Controller;
 use think\Request;
 
-class Pic extends Controller
+class Pic extends Base
 {
     /**
      * 显示资源列表

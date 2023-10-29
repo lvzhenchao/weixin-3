@@ -26,7 +26,7 @@ class Login extends Controller
     }
 
     public function logout(){
-        session('user_name', '');
+        session('user_name', null);
         $this->redirect('/login');
     }
 
