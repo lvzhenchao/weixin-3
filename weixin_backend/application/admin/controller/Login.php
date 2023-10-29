@@ -3,11 +3,17 @@
 namespace app\admin\controller;
 
 use think\Controller;
+use think\Request;
 
 class Login extends Controller
 {
-	public function index(){
-		return $this->fetch();
-	}
+	public function index(Request $request){
+        dump($request->param());
+        if ($request->isPost()) {
+        } else {
+        }
+        return $this->fetch();
+
+    }
     //
 }
