@@ -1,0 +1,39 @@
+<!--pages/cart/cart.wxml-->
+
+<view class="cart">
+  <view class="cart-chk"><checkbox color='#EF6568' /></view>
+  <view class="cart-img"><image src='../../images/book/book-4.png'></image></view>
+  <view>
+      <view class="cart-title">PHP和MySQL Web开发（原书第5版）</view>
+      <view class="buy-count">
+
+      <view class="book-price">￥101.90</view>
+
+    </view>
+  </view>
+</view>
+
+<view class="cart-sep"></view> 
+
+
+
+<view class="cart">
+  <view class="cart-chk"><checkbox color='#EF6568' /></view>
+  <view class="cart-img"><image src='../../images/book/book-4.png'></image></view>
+  <view>
+      <view class="cart-title">PHP和MySQL Web开发（原书第5版）</view>
+      <view class="buy-count">
+
+      <view class="book-price">￥101.90</view>
+  
+    </view>
+  </view>
+</view>
+
+<view class="cart-sep"></view> 
+
+
+<view class="cart-bottom">
+  <view>总计:<text class="total-price">￥101.90</text></view>
+  <view class="buy-now" bindtap='toPay'>去结算</view>
+</view>

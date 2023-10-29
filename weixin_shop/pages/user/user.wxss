@@ -1,0 +1,38 @@
+/* pages/user/user.wxss */
+
+page{
+  background: #EBEBEB;
+  height: 100%
+}
+
+.user-info{
+  display: flex;
+  flex-direction: row;
+  background: #FFFFFF;
+  margin-top: 20rpx;
+}
+
+.name{
+  margin-top: 20rpx;
+}
+
+.user-info image{
+  width: 100rpx;
+  height: 100rpx;
+  padding: 20rpx;
+}
+
+.user-content{
+  margin-top: 20rpx;
+  height: 500rpx;
+  background: #FFFFFF;
+}
+.user-content view{
+  height: 100rpx;
+  line-height: 100rpx;
+  margin-left: 30rpx;
+}
+.user-sep{
+  display: block;
+  border: 1rpx solid #EBEBEB
+}

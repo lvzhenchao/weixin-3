@@ -1,0 +1,35 @@
+<!--pages/detail/detail.wxml-->
+<view>
+  <image class='book-img' src="../../images/book/book-4.png" />
+</view>
+
+
+<view class="book-detail">
+   <view class="book-title">PHP和MySQL Web开发（原书第5版）</view>
+   <view class="book-price">￥101.90 <text>原价:￥135.90</text></view>
+   <view class="book-des">详细讲解了PHP的内核机制以及原理.加薪必备技能</view>
+</view>
+
+<view class="book-sep"></view> 
+
+
+<view>
+
+  <view>
+    <image class='book-img' src="../../images/book/book-4.png" />
+    <image class='book-img' src="../../images/book/book-3.png" />
+    <image class='book-img' src="../../images/book/book-2.png" />
+  </view>
+
+</view>
+
+
+
+<view class="book-bottom">
+  <view>
+     <image src="../../images/cart.png"></image>
+     <view class="cart-num">1</view>
+  </view>
+  <view class="cart" >加入购物车</view>
+  <view class="buy-now" bindtap='toPay'>立即购买</view>
+</view>

@@ -1,0 +1,13 @@
+<!--pages/user/user.wxml-->
+
+<view class="user-info">
+  <view><image src="../../images/book/book-4.png"></image></view>
+  <view class="name">左右</view>
+</view>
+
+<view class="user-content">
+  <view class="order">我的订单</view>
+  <text class="user-sep"></text>
+  <view class="address" bindtap='getAdd'>收货地址</view>
+   <text class="user-sep"></text>
+</view>

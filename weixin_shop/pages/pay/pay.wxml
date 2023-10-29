@@ -1,0 +1,27 @@
+<!--pages/pay/pay.wxml-->
+<view class="shopping">
+  <view class="shopping-list">购物清单</view>
+  <view class="shopping-sep"></view>
+  <view class='list'>
+    <view class="book-title">PHP和MySQL Web开发（原书第5版）</view>
+    <view class="book-price">￥101.90</view>
+  </view>
+   <view class="shopping-sep"></view>
+  <view class='list'>
+    <view class="book-title">PHP和MySQL Web开发（原书第5版）</view>
+    <view class="book-price">￥101.90</view>
+  </view>
+</view>
+
+
+<view class="shopping">
+  <view class="shopping-list">收货地址</view>
+  <view class="shopping-sep"></view>
+  <view class='list'>
+    <view bindtap='chooseAddress' class="book-title">选择收货地址</view>
+  </view>
+</view>
+
+<view class="but">
+<button type='warn' >付款</button>
+</view>

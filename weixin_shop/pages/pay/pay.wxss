@@ -1,0 +1,39 @@
+/* pages/pay/pay.wxss */
+page{
+  background: #EBEBEB;
+  height: 100%
+}
+
+.list{
+  display: flex;
+  flex-direction: row;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.book-title{
+  font: 30rpx tahoma,arial,Microsoft YaHei,Hiragino Sans GB,"宋体",sans-serif;
+   height: 100rpx;
+  line-height: 100rpx;
+  margin-left: 20rpx;
+}
+.book-price{
+  color: #e4393c;
+  font-size: 40rpx;
+}
+.shopping-list{
+    font: 30rpx tahoma,arial,Microsoft YaHei,Hiragino Sans GB,"宋体",sans-serif;
+    height: 50rpx;
+    line-height: 50rpx;
+    margin-left: 20rpx;
+}
+.shopping{
+  margin-top: 20rpx;
+  background: white;
+}
+.shopping-sep{
+  border: 1rpx solid #EBEBEB
+}
+.but{
+  margin-top: 100rpx;
+}

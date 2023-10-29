@@ -1,0 +1,55 @@
+/**index.wxss**/
+.slide-image{
+  width:100%;
+}
+
+.seperate{
+  border: 1rpx solid #E5E5E5;
+  margin-top: 20rpx;
+}
+.content{
+  display: flex;
+  flex-direction: row
+}
+.content-right{
+  margin-top: 30rpx;
+}
+
+.content-left{
+  margin-top: 80rpx;
+}
+.content-right image{
+  width: 300rpx;
+  height: 350rpx;
+  padding: 30rpx;
+}
+.content-title{
+  font: 30rpx tahoma,arial,Microsoft YaHei,Hiragino Sans GB,"宋体",sans-serif;
+  height: 60rpx;
+}
+.content-price{
+  color: #e4393c;
+  font-size: 40rpx;
+}
+
+.content-price text{
+  color: #999999;
+  font-size: 30rpx;
+  text-decoration:line-through;
+}
+
+.content-left view{
+  margin-top: 30rpx
+}
+.book-sep{
+  border: 1rpx solid #E5E5E5;
+
+}
+.content-des{
+  font: 25rpx tahoma,arial,Microsoft YaHei,Hiragino Sans GB,"宋体",sans-serif;
+}
+
+.cart{
+  width:300rpx;
+  margin-left: 20rpx;
+}

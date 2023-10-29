@@ -1,0 +1,73 @@
+/* pages/cart/cart.wxss */
+.cart{
+  display: flex;
+  flex-direction: row;
+  margin-top: 30rpx;
+}
+.cart-chk{
+  width: 80rpx;
+  height: 200rpx;
+  line-height: 200rpx;
+  margin-left: 20rpx;
+}
+.cart-img image{
+  width: 160rpx;
+  height: 200rpx;
+}
+.cart-title{
+   font: 30rpx tahoma,arial,Microsoft YaHei,Hiragino Sans GB,"宋体",sans-serif;
+   margin:20rpx;
+}
+
+
+
+
+.buy-count{
+  height: 46px;
+  display: flex;
+  flex-direction: row;
+}
+.buy-text{
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+
+.cart-sep{
+  border: 1rpx solid #E5E5E5;
+}
+
+.book-price{
+  color: #e4393c;
+  font-size: 40rpx;
+   height: 46px;
+  line-height: 46px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.cart-bottom{
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  justify-content: space-between;
+}
+
+.total-price{
+   color: #e4393c;
+  font-size: 40rpx;
+}
+.buy-now{
+  width: 45%;
+  background: #E93B3D;
+  text-align: center;
+  color: #FFFFFF;
+  margin-right: 1rpx;
+  
+}
