@@ -16,5 +16,6 @@ Route::get('order','admin/Order/index');
 Route::get('order/detail','admin/Order/detail');
 Route::get('user','admin/User/index');
 Route::rule('login','admin/Login/index', 'POST|GET');
+Route::rule('logout','admin/Login/logout');
 Route::resource('pic','admin/Pic');
 
