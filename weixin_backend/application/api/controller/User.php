@@ -35,6 +35,11 @@ class User extends Controller
             'thr_session' => $thr_session,
         ];
 
+        $id = Db::name("user")->where(['open_id'=>$ret['openId']])->value("id");
+        if ($id) {//防止信息有更新
+            Db::name("user")->where(['open_id'=>$ret['openId']])->update($data);
+        }
+
         $ins = Db::name("user")->insert($data);
         if ($ins) {
             return $thr_session;
