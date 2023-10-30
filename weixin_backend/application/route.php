@@ -19,3 +19,7 @@ Route::rule('login','admin/Login/index', 'POST|GET');
 Route::rule('logout','admin/Login/logout');
 Route::resource('pic','admin/Pic');
 
+
+//api
+Route::rule('getSess', 'api/User/getSess', 'POST|GET');
+
