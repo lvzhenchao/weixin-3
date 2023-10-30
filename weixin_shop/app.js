@@ -9,7 +9,6 @@ App({
         var code = res_login.code
         wx.getUserInfo({
           success: function (res_userInfo) {
-            console.log(config.URL)
             wx.request({
               url: config.URL + '/getSess',
               method: 'POST',
