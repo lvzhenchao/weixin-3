@@ -24,19 +24,38 @@ userInfo:{
     "province": "PROVINCE",
     "country": "COUNTRY",
     "avatarUrl": "AVATARURL",
-    "unionId": "UNIONID",
+    "unionId": "UNIONID",//如果获取不到，可能是 【小程序，或者公众号，需要先绑定到 微信开放平台】https://www.u72.net/shili/show-669944.html
     "watermark":
     {
         "appid":"APPID",
         "timestamp":TIMESTAMP
     }
 }
+{
+    "openId": "o-ox468zUqSqfH9EA4Pxmzo0kr8o",
+    "nickName": "微信用户",
+    "gender": 0,
+    "language": "",
+    "city": "",
+    "province": "",
+    "country": "",
+    "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/POgEwh4mIHO4nibH0KlMECNjjGxQUq24ZEaGT4poC6icRiccVGKSyXwibcPq4BWmiaIGuG1icwxaQX6grC9VemZoJ8rg/132",
+    "watermark": 
+    {
+        "timestamp": 1698676321,
+        "appid": "wx2ec72e21d73f9044"
+    }
+}
 
-方法：参考 https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/signature.html
-1、先获取
-openid: "o-ox468zUqSqfH9EA4Pxmzo0kr8o"
-session_key: "8MFmKfEySZsyhqWNV7ZUqA=="
-2、加密数据解密：下载demo
+方法：
+第一步：调用微信wx.login获取登录凭证code
+第二步：通过code 获取 openid 和 session_key
+    https://api.weixin.qq.com/sns/jscode2session?appid=APPID&secret=SECRET&js_code=JSCODE&grant_type=authorization_code
+    参考https://developers.weixin.qq.com/miniprogram/dev/OpenApiDoc/user-login/code2Session.html
+    openid: "o-ox468zUqSqfH9EA4Pxmzo0kr8o"
+    session_key: "8MFmKfEySZsyhqWNV7ZUqA=="
+第三步：加密数据解密：下载demo
+    参考 https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/signature.html
 
 ```
 ## 后端调用

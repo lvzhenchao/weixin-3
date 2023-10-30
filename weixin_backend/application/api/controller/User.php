@@ -2,6 +2,7 @@
 namespace app\api\controller;
 
 use think\Controller;
+use think\Db;
 use think\Request;
 
 class User extends Controller
@@ -24,8 +25,20 @@ class User extends Controller
 
         $ret = $this->decryUser($iv, $res['session_key'], $enData, $appid);
 
-        halt($ret);
-        return json($ret);
+        $ret = json_decode($ret, true);
+        $thr_session = md5($ret['openId'].$res['session_key']);
+        $data = [
+            'nick_name'   => $ret['nickName'],
+            'avatar_url'  => $ret['avatarUrl'],
+            'open_id'     => $ret['openId'],
+            'session_key' => $res['session_key'],
+            'thr_session' => $thr_session,
+        ];
+
+        $ins = Db::name("user")->insert($data);
+        if ($ins) {
+            return $thr_session;
+        }
     }
 
     private function decryUser($iv, $sessionKey, $encryptedData, $appid)

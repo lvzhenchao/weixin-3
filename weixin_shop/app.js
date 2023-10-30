@@ -3,7 +3,9 @@ var  config = require("utils/config.js");
 
 App({
   onLaunch: function () {
-
+    if(wx.getStorageSync('thr_session')){
+      return ''; 
+    }
     wx.login({
       success: (res_login) => {
         var code = res_login.code
@@ -18,7 +20,7 @@ App({
                 iv:res_userInfo.iv,
               },
               success:function (res_req) {
-                console.log(res_req); 
+                wx.setStorageSync('thr_session', res_req.data);
               }
             })
           }
